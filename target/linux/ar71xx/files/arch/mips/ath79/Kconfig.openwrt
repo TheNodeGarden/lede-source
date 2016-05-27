@@ -595,7 +595,7 @@ config ATH79_MACH_GL_AR150
 	select ATH79_DEV_WMAC
 
 config ATH79_MACH_ZSUN_SDREADER
-	bool "ZSUNG SDReader support"
+	bool "ZSUN SDReader support"
 	select SOC_AR933X
 	select ATH79_DEV_ETH
 	select ATH79_DEV_GPIO_BUTTONS

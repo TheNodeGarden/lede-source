@@ -200,7 +200,7 @@ platform_check_image() {
 	wpj558 | \
 	zcn-1523h-2 | \
 	zcn-1523h-5 | \
- 	zsun-sdreader | \
+	zsun-sdreader | \
 	ap81 | \
 	ap83 | \
 	ap132 | \
