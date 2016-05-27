@@ -200,13 +200,7 @@ platform_check_image() {
 	wpj558 | \
 	zcn-1523h-2 | \
 	zcn-1523h-5 | \
- 	zsun-sdreader)
-		[ "$magic_long" != "68737173" -a "$magic_long" != "19852003" ] && {
-			echo "Invalid image type."
-			return 1
-		}
-		return 0
-		;;
+ 	zsun-sdreader | \
 	ap81 | \
 	ap83 | \
 	ap132 | \
