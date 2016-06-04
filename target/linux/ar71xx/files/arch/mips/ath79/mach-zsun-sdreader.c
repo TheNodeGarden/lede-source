@@ -21,16 +21,16 @@
 #include "dev-wmac.h"
 #include "machtypes.h"
 
-#define ZSUN_SDREADER_GPIO_LED_SYSTEM		0
+#define ZSUN_SDREADER_GPIO_LED_SYSTEM			0
 
-#define ZSUN_SDREADER_GPIO_SW_SD		22
+#define ZSUN_SDREADER_GPIO_SW_SD				22
 
-#define ZSUN_SDREADER_MAC0_OFFSET		0x0000
-#define ZSUN_SDREADER_MAC1_OFFSET		0x0006
-#define ZSUN_SDREADER_CALDATA_OFFSET		0x1000
-#define ZSUN_SDREADER_WMAC_MAC_OFFSET		0x1002
+#define ZSUN_SDREADER_MAC0_OFFSET				0x0000
+#define ZSUN_SDREADER_MAC1_OFFSET				0x0006
+#define ZSUN_SDREADER_CALDATA_OFFSET			0x1000
+#define ZSUN_SDREADER_WMAC_MAC_OFFSET			0x1002
 
-#define ZSUN_SDREADER_KEYS_POLL_INTERVAL	20	/* msecs */
+#define ZSUN_SDREADER_KEYS_POLL_INTERVAL		20	/* msecs */
 #define ZSUN_SDREADER_KEYS_DEBOUNCE_INTERVAL	(3 * ZSUN_SDREADER_KEYS_POLL_INTERVAL)
 
 static struct gpio_led zsun_sdreader_leds_gpio[] __initdata = {
@@ -51,7 +51,6 @@ static struct gpio_keys_button zsun_sdreader_gpio_keys[] __initdata = {
 		.active_low	= 1,
 	}
 };
-
 
 static void __init zsun_sdreader_common_setup(void)
 {
