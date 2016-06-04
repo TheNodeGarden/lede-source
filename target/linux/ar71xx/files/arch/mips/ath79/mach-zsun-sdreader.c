@@ -25,6 +25,9 @@
 
 #define ZSUN_SDREADER_GPIO_SW_SD				22
 
+
+#define ZSUN_READER_ART_DATA_ADDR				0x1fff0000
+
 #define ZSUN_SDREADER_MAC0_OFFSET				0x0000
 #define ZSUN_SDREADER_MAC1_OFFSET				0x0006
 #define ZSUN_SDREADER_CALDATA_OFFSET			0x1000
@@ -54,7 +57,7 @@ static struct gpio_keys_button zsun_sdreader_gpio_keys[] __initdata = {
 
 static void __init zsun_sdreader_common_setup(void)
 {
-	u8 *art = (u8 *) KSEG1ADDR(0x1fff0000);
+	u8 *art = (u8 *) KSEG1ADDR(ZSUN_READER_ART_DATA_ADDR);
 
 	ath79_register_m25p80(NULL);
 	ath79_register_wmac(art + ZSUN_SDREADER_CALDATA_OFFSET,
