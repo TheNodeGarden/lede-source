@@ -437,6 +437,14 @@ define Device/mc-mac1200r
 endef
 TARGET_DEVICES += mc-mac1200r
 
+define Device/ng-nodedon
+    BOARDNAME := NG-NODEDON
+    IMAGE_SIZE := 16000k
+    CONSOLE := ttyATH0,115200
+    MTDPARTS := spi0.0:128k(u-boot)ro,64k(u-boot-env)ro,16128k(firmware),64k(art)ro
+endef
+TARGET_DEVICES += ng-nodedon
+
 define Device/minibox-v1
   $(Device/tplink-16mlzma)
   DEVICE_TITLE := Gainstrong MiniBox V1.0
