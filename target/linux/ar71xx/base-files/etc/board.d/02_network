@@ -215,6 +215,9 @@ ar71xx_setup_interfaces()
 	cap324)
 		ucidef_set_interface_lan "eth0" "dhcp"
 		;;
+	ng-nodedon)
+		ucidef_set_interface_raw "ng" "eth0" "dhcp"
+		;;
 	cpe210|\
 	cpe510|\
 	wbs210|\

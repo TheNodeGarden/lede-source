@@ -242,6 +242,9 @@ get_status_led() {
 	nbg6716)
 		status_led="$board:white:power"
 		;;
+	ng-nodedon)
+ 		status_led="nodedon:blue:system"
+ 		;;
 	om2p|\
 	om2pv2|\
 	om2pv4|\
