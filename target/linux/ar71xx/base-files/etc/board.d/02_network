@@ -377,6 +377,7 @@ wp543)
 	ucidef_set_interface_lan "eth0"
 	;;
 
+ng-nodedon
 cap324)
 	ucidef_set_interface_lan "eth0" "dhcp"
 	;;

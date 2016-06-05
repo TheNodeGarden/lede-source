@@ -326,6 +326,7 @@ platform_check_image() {
 	mr600v2 | \
 	mr900 | \
 	mr900v2 | \
+	ng-nodedon | \
 	om2p | \
 	om2pv2 | \
 	om2p-hs | \
