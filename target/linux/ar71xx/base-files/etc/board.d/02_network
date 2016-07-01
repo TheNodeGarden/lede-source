@@ -377,9 +377,13 @@ wp543)
 	ucidef_set_interface_lan "eth0"
 	;;
 
-ng-nodedon |\
 cap324)
 	ucidef_set_interface_lan "eth0" "dhcp"
+	;;
+
+ng-nodedon)
+	#ucidef_set_interface_lan "eth0"
+	ucidef_set_interface_raw "ng" "eth0" "dhcp"	
 	;;
 
 arduino-yun |\

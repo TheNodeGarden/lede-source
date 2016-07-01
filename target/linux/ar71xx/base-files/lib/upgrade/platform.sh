@@ -277,6 +277,7 @@ platform_check_image() {
 	unifiac-pro | \
 	unifi-outdoor | \
 	carambola2 | \
+	ng-nodedon | \
 	weio | \
 	wrtnode2q)
 		[ "$magic" != "2705" ] && {
@@ -326,7 +327,6 @@ platform_check_image() {
 	mr600v2 | \
 	mr900 | \
 	mr900v2 | \
-	ng-nodedon | \
 	om2p | \
 	om2pv2 | \
 	om2p-hs | \
