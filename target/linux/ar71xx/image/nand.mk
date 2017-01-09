@@ -69,6 +69,12 @@ endef
 
 TARGET_DEVICES += z1
 
+define LegacyDevice/GLAR300MNAND
+	DEVICE_TITLE := GL-AR300M NAND
+	DEVICE_PACKAGES := kmod-usb-core kmod-usb2 mod-usb-storage kmod-ledtrig-usbdev kmod-ledtrig-gpio
+endef
+LEGACY_DEVICES += GLAR300MNAND
+
 define LegacyDevice/R6100
   DEVICE_TITLE := NETGEAR R6100
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport
